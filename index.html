@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-5">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Alarm Clock" content="Coding Ninja Fronte Skill Test - 1 (Alarm clock) " />
+    
+    <title>Test - 1 Alarm Clock 🕰️</title>
+
+    <!--Favicon-->
+
+    <link rel = "icon" href="alarm.ico" />
+
+
+    <!-- Stylesheet-->
+
+    <link rel = "stylesheet" href = "style.css" />
+
+</head>
+
+<body>
+    <div class= "heading">
+      <h1>Coding Ninja FrontEnd Skill Test 1 - ALARM CLOCK 🕰️ </h1>
+    </div>
+    <div class="SectionMain display">
+      <div class="SectionClock display">
+        <div class="PresentTime mfoot" id= "PresentTime">_ : _ : _ </div>
+        <form class="alarm-form display mfoot">
+          <div>
+          <select name="hh" id="hh" required></select>
+
+          <select required name="mm" id="mm"></select>
+
+          <select required name="ss" id="ss"></select>
+          <select required name="meridian_indicator" id="meridian_indicator">
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+          </select>
+          </div>
+          <button class="button confirm_btn" id="confirmBtn" type="submit">Schedule Alarm</button>
+        </form>
+        <div class="adjust-alarm-section">
+          <div class="adjust-alarm-section-title mfoot">Upcoming Alarms</div>
+          <div class="Holder_Part_Alarm" id= "Holder_Part_Alarm"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+  </body>
+</html>

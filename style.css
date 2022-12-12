@@ -1,0 +1,138 @@
+
+
+  body {
+    font-family: Times New Roman;
+  }
+  
+  .display {
+    display: flex;
+  }
+    
+  .button {
+    background-color: #007399;
+    cursor: pointer;
+    padding: 0.6rem;
+    outline: none;
+	border-radius: 1.2px;
+	border: none;
+    transition: all 0.4s ease-in-out;
+  }
+  select {
+    outline: #004d66;
+    padding: 0.6rem;
+	appearance: none;
+    margin-right: 0.4rem;
+    cursor: pointer;
+	background-color: #007399;
+    color:  #F3F3F3;
+	border: none;
+    border-radius: 2.1rem;
+    border-color: #004d66;
+	font-weight: bold;
+  }
+  
+  .mfoot {
+    margin-bottom: 1.2rem;
+  }
+  
+  /* e GLobal Styles */
+  
+  .SectionMain {
+	background: url(alarm.jpg);
+/*	background-repeat: no-repeat;*/
+	background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 98vh;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .SectionClock {
+	opacity:0.7;
+    padding: 2.2rem;
+    flex-flow: column;
+    justify-content: flex-s;
+    width: 98%;
+    min-height: 98vh;
+    background-color:  #FCE5CD;
+	align-items: center;
+  }
+  
+  .PresentTime {
+	color: #002633;
+    font-size: 2.1rem;
+  }
+  
+  .alarm-form {
+	width: 99%;
+    justify-content: space-between;
+  }
+  
+  .confirm_btn {
+	border: 11px;
+    border-radius: 2.2rem;
+	font-weight: bold;
+	color:#FFFFFF;
+    border-color: #ff99ff;
+  }
+  
+  .adjust-alarm-section {
+    width: 100%;
+  }
+  
+  .adjust-alarm-section .adjust-alarm-section-title {
+    font-weight: bold;
+	color: #007399;
+    font-size: 1.2rem;
+  }
+  
+  .alarm {
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+  
+  }
+  .alarm .remove_Alarm {
+    border-radius: 1.8rem;
+    background-color: #2E6DA5;
+    font-weight: bold;
+    color: white;
+    font-size:0.8rem;
+  }
+  
+  .time {
+	font-weight: bold;
+    color: #722B2B;
+    font-size: 1.2rem;
+  }
+  .button:focus,
+  .button:hover {
+    box-shadow: #ffffb3 1.9px 1.9px 1.9px 0.95px inset, #00ff99 -1.9px -1.9px 11px 0.95px insebt;
+  }
+  
+  .heading{
+	align-items: center;
+    text-align: center;
+    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+  }
+
+  
+  /* style of devices of screen size less than 768px */
+  @media only screen and (min-width: 590px) {
+    /* adding padding to Section */
+    .SectionMain {
+      padding-block: 2.2rem;
+    }
+    .SectionClock{
+        justify-content: center;
+		min-height: auto;
+        border-radius: 52px;
+        width: 456px;
+    }
+  }
+  
+* {
+    padding: 0;
+    box-sizing: border-box;
+	margin: 0;
+}
